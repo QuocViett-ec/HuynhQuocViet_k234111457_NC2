@@ -20,6 +20,11 @@ import { ListProduct3 } from './list-product-3/list-product-3';
 import { Ex15 } from './ex15/ex15';
 import { Ex18 } from './ex18/ex18';
 import { Ex10 } from './ex10/ex10';
+import { PageNotFound } from './page-not-found/page-not-found';
+import { ListCustomers } from './list-customers/list-customers';
+import { CustomerDetail } from './customer-detail/customer-detail';
+import { ListCustomerService } from './list-customer-service/list-customer-service';
+import { ListCustomerHttpService } from './list-customer-http-service/list-customer-http-service';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,11 @@ import { Ex10 } from './ex10/ex10';
     Ex15,
     Ex18,
     Ex10,
+    PageNotFound,
+    ListCustomers,
+    CustomerDetail,
+    ListCustomerService,
+    ListCustomerHttpService,
   ],
   imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [provideBrowserGlobalErrorListeners()],
