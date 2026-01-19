@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { RoutingComponent } from './app-routing-module';
 import { About } from './about/about';
 import { Contact } from './contact/contact';
 import { Mybinding } from './mybinding/mybinding';
@@ -25,6 +26,13 @@ import { ListCustomers } from './list-customers/list-customers';
 import { CustomerDetail } from './customer-detail/customer-detail';
 import { ListCustomerService } from './list-customer-service/list-customer-service';
 import { ListCustomerHttpService } from './list-customer-http-service/list-customer-http-service';
+import { ServiceProductImageEvent } from './ex13/service-product-image-event/service-product-image-event';
+import { ServiceProductImageEventDetail } from './ex13/service-product-image-event-detail/service-product-image-event-detail';
+import { Ex14 } from './ex14/ex14';
+import { Ex19 } from './ex19/ex19';
+import { Product } from './ex19/product/product';
+import { ListProduct } from './ex19/list-product/list-product';
+import { ServiceProduct } from './ex19/service-product/service-product';
 
 @NgModule({
   declarations: [
@@ -48,8 +56,16 @@ import { ListCustomerHttpService } from './list-customer-http-service/list-custo
     CustomerDetail,
     ListCustomerService,
     ListCustomerHttpService,
+    ServiceProductImageEvent,
+    ServiceProductImageEventDetail,
+    Ex19,
+    RoutingComponent,
+    Ex19,
+    Product,
+    ListProduct,
+    ServiceProduct,
   ],
-  imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule, HttpClientModule, Ex14],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })

@@ -10,6 +10,10 @@ import { ListCustomers } from './list-customers/list-customers';
 import { CustomerDetail } from './customer-detail/customer-detail';
 import { ListCustomerService } from './list-customer-service/list-customer-service';
 import { ListCustomerHttpService } from './list-customer-http-service/list-customer-http-service';
+import { Product } from './ex19/product/product';
+import { ListProduct } from './ex19/list-product/list-product';
+import { ServiceProduct } from './ex19/service-product/service-product';
+import { Ex19 } from './ex19/ex19';
 
 const routes: Routes = [
   { path: 'ABOUT', component: About },
@@ -17,14 +21,20 @@ const routes: Routes = [
   { path: 'product-1', component: ListProduct1 },
   { path: 'product-2', component: ListProduct2 },
   { path: 'product-3', component: ListProduct3 },
+  { path: 'product', component: Product },
+  { path: 'list-product', component: ListProduct },
+  { path: 'service-product', component: ServiceProduct },
+  { path: 'ex19', component: Ex19 },
   { path: 'list-customers', component: ListCustomers },
   { path: 'list-customers/:id', component: CustomerDetail },
   { path: 'list-customers-service', component: ListCustomerService },
   { path: 'list-customers-service/:id', component: ListCustomerService },
   { path: 'list-customers-http-service', component: ListCustomerHttpService },
   { path: 'list-customers-http-service/:id', component: CustomerDetail },
-  { path: '**', component: PageNotFound },
+  //{ path: '**', component: PageNotFound },
 ];
+
+export const RoutingComponent = [Product, ListProduct, ServiceProduct];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

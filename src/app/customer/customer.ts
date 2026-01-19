@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CustomerService } from '../customer-service';
+import { CustomerService } from '../bai-cu/customer-service';
 
 @Component({
   selector: 'app-customer',
   standalone: false,
   templateUrl: './customer.html',
-  styleUrl: './customer.css',
+  styleUrls: ['./customer.css'],
 })
 export class Customer {
   products: any;

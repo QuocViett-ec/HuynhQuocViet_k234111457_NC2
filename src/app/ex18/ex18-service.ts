@@ -20,7 +20,7 @@ export interface CustomerType {
   providedIn: 'root',
 })
 export class Ex18Service {
-  customer_url = './assets/dataset/cusstomer.json';
+  customer_url = '/assets/dataset/cusstomer.json';
   constructor(private _http: HttpClient) {}
   getCustomerTypes(): Observable<CustomerType[]> {
     return this._http.get<CustomerType[]>(this.customer_url);

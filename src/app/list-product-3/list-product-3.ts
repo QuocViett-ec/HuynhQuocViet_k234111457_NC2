@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
-import { ProductHttpService } from '../product-http-service';
+import { ProductHttpService } from '../bai-cu/product-http-service';
+import { IProduct } from '../classes/iproduct';
 
 @Component({
   selector: 'app-list-product-3',
   standalone: false,
   templateUrl: './list-product-3.html',
-  styleUrl: './list-product-3.css',
+  styleUrls: ['./list-product-3.css'],
 })
 export class ListProduct3 {
-  products: any;
-  constructor(private pshttp: ProductHttpService) 
-  {
-    this.pshttp.get_all_products().subscribe( {
-      next: (data) => {
+  products: IProduct[] = [];
+  constructor(private pshttp: ProductHttpService) {
+    this.pshttp.get_all_products().subscribe({
+      next: (data: IProduct[]) => {
         this.products = data;
-      }
+      },
     });
   }
 }
