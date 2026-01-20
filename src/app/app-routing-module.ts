@@ -16,12 +16,16 @@ import { ServiceProduct } from './ex19/service-product/service-product';
 import { Ex19 } from './ex19/ex19';
 import { Form } from './form/form';
 import { ReactiveForm } from './reactive-form/reactive-form';
+import { Ex26 } from './ex26/ex26';
+import { Ex27 } from './ex27/ex27';
 
 const routes: Routes = [
   { path: 'ABOUT', component: About },
   { path: 'EX10', component: Ex10 },
   { path: 'form', component: Form },
   { path: 'reactive', component: ReactiveForm },
+  { path: 'ex26', component: Ex26 },
+  { path: 'ex27', component: Ex27 },
   { path: 'product-1', component: ListProduct1 },
   { path: 'product-2', component: ListProduct2 },
   { path: 'product-3', component: ListProduct3 },
