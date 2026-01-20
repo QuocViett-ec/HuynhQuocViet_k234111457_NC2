@@ -14,10 +14,14 @@ import { Product } from './ex19/product/product';
 import { ListProduct } from './ex19/list-product/list-product';
 import { ServiceProduct } from './ex19/service-product/service-product';
 import { Ex19 } from './ex19/ex19';
+import { Form } from './form/form';
+import { ReactiveForm } from './reactive-form/reactive-form';
 
 const routes: Routes = [
   { path: 'ABOUT', component: About },
   { path: 'EX10', component: Ex10 },
+  { path: 'form', component: Form },
+  { path: 'reactive', component: ReactiveForm },
   { path: 'product-1', component: ListProduct1 },
   { path: 'product-2', component: ListProduct2 },
   { path: 'product-3', component: ListProduct3 },

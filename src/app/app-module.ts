@@ -33,6 +33,12 @@ import { Ex19 } from './ex19/ex19';
 import { Product } from './ex19/product/product';
 import { ListProduct } from './ex19/list-product/list-product';
 import { ServiceProduct } from './ex19/service-product/service-product';
+import { Form } from './form/form';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveForm } from './reactive-form/reactive-form';
+import { Ex26 } from './ex26/ex26';
+import { Ex27 } from './ex27/ex27';
+import { Ex28 } from './ex28/ex28';
 
 @NgModule({
   declarations: [
@@ -64,8 +70,21 @@ import { ServiceProduct } from './ex19/service-product/service-product';
     Product,
     ListProduct,
     ServiceProduct,
+    Form,
+    ReactiveForm,
+    Ex26,
+    Ex27,
+    Ex28,
   ],
-  imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule, HttpClientModule, Ex14],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    Ex14,
+  ],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
